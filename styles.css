@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+}
+
+#home{
+    height: 50px;
+    margin: 0px;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.left, .right, .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.name{
+    margin-left: 100px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #525335;
+}
+
+.right img{
+    width: 24px;
+    height: 24px;
+    margin: 0px 10px;
+}
+
+.right div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right div, .left p{
+    margin: 0px 10px;
+}
+
+.right p, .left p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.background{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.background_photo{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon_div{
+    position: absolute;
+    z-index: 2;
+    margin-top: 15%;
+    /* margin-left: 36.2%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon{
+    height: 250px;
+}
+
+#under_icon{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.under_icon_name, .under_name{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.tea{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 69%;
+}
+
+.tea div{
+    position: relative;
+}
+
+.tea img{
+    width: 340px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.tea p{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 15px #000000;
+}
+
+.black_tea_text, .green_tea_text{
+    margin-top: 90px;
+}
+
+.herbs_tea_text{
+    margin-top: -90px;
+}
+
+.text_why{
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#why{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.reason_why{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.reason_why li{
+    margin-bottom: 15px;
+}
+
+#icon_why{
+    height: 100px;
+}
+
+.tea_history img{
+    width: 55%;
+}
+
+.tea_history{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #405335;
+}
+
+.history_text{
+    width: 375px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
