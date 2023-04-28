@@ -2,12 +2,22 @@ body{
     margin: 0px;
 }
 
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
 #home{
     height: 50px;
-    margin: 0px;
     display: flex; 
     justify-content: space-between;
     flex-direction: row-reverse;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .left, .right, .name{
@@ -180,4 +190,137 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 7%;
+}
+/* about us page */
+
+.about-us-container{
+    display:flex;
+    margin:70px auto 70px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.about-us-container div{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.about-us-container h1{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.about-us-container p{
+    margin: 100px 0 0 0;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+
+#aboutus-icon{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:40%;
+}
+
+.about-us-imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:85%;
+    margin:0;
+    padding:0;
+}
+
+.about-us-imgs #aboutus-img{
+    position: relative;
+    width: inherit;
+}
+
+/* footer */
+
+#footer{
+    background-color: #667160;
+    display: flex;
+    padding: 10px 10px 10px 0px;
+    justify-content: space-around;
+}
+
+#footer div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    margin: auto 0px 0 0px;
+    line-height: 10px;
+    justify-content: left;
+    width:230px;
+}
+
+#teplofooter{
+    width:100px;
+}
+#footer div h1{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+
+#footer div img{
+    height:25px;
+    margin-bottom: 10px;
+}
+
+#footerlight{
+    display: flex;
+    padding: 30px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footerlight p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color:#525335;
+    margin:10px;
+}
+
+#footerlight img{
+    width:60px;
+}
+
+.footerconnect div{
+    display:flex;
+    justify-content: space-between;
+}
+
+.footerconnect div img{
+    margin: 3px 10px 0 0;
+}
+
+.footerconnect :nth-child(2) img{
+    margin: 9px 10px 0 2px;
 }
