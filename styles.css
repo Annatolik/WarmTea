@@ -191,6 +191,90 @@ a{
     flex-direction: column;
     margin-left: 7%;
 }
+
+#history_h, #tea_history_text{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+#history_h{
+    margin-bottom: 26px;
+}
+
+.sort_of_tea img{
+    width: 280px;
+    margin: 0px;
+}
+
+#tea2, #tea3{
+    width: 230px;
+}
+
+.sort_of_tea{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
+
+.choose_tea{
+    margin-top: 110px;
+    margin-bottom: 40px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+#choose_h{
+    margin: 0px;
+    font-size: 28px;
+}
+
+.want_tea{
+    position: relative;
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+    background: #E09132;
+    height: 460px;
+    flex-direction: row;
+    margin-bottom: 110px;
+}
+
+.want_tea img{
+    width: 100%;
+}
+
+.want_tea_text{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    text-align: right;
+    font-size: 28px;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 310px;
+    margin-right: -60px;
+    transform: translate(-50%, -50%);
+
+}
+
+#want_tea_h{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    margin: 0px;
+}
+
+
 /* about us page */
 
 .about-us-container{
