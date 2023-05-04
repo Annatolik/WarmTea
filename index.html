@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
     <link rel="stylesheet" href="styles.css">
     <script src="form.js"></script>
     <link rel="icon" type="image/png" href="icons/titlepic.ico"/>
@@ -79,16 +83,24 @@
         </div>
     </div>
     
-    <div>
+    <div class="sort_of_tea">
         <div class="choose_tea">
             <h4 id="choose_h">ОБРАТИ СМАК</h4>
             <p>який вид чаю обереш для<br>домашньої чайної церемонії?</p>
         </div>
-        <div class="sort_of_tea">
-            <img src="icons/tea_1.png">
-            <img id="tea2" src="icons/tea_2.png">
-            <img id="tea3" src="icons/tea_3.png">
-            <img src="icons/tea_4.png">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="icons/tea_1.png" alt="img" draggable="false">
+              <img src="icons/tea_1.png" alt="img" draggable="false">
+              <img src="icons/tea_2.png" alt="img" draggable="false">
+              <img src="icons/tea_2.png" alt="img" draggable="false">
+              <img src="icons/tea_3.png" alt="img" draggable="false">
+              <img src="icons/tea_3.png" alt="img" draggable="false">
+              <img src="icons/tea_4.png" alt="img" draggable="false">
+              <img src="icons/tea_4.png" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
     </div>
     <div class="want_tea">
@@ -98,6 +110,7 @@
         </div>
         <img src="icons/tea-back.png">
     </div>
+      
 
     <div id = "footer">
         <div>
@@ -131,5 +144,8 @@
         <img src = "icons/footericon.png">
         <p>teplotea(с)2023</p>
     </div>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
