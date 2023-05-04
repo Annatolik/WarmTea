@@ -1,0 +1,122 @@
+
+.filters{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 25px;
+    margin: 50px 20px 50px 40px;
+    width:300px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+  .filter-header button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .filter ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin:0;
+  }
+
+  .filter ul li {
+    margin: 5px 0 0 0px;
+    line-height: 30px;
+  }
+  input[type="checkbox"] {
+    vertical-align: middle;
+    accent-color: #555555;
+    margin-right: 13px;
+  }
+
+  .filter-header{
+    display:flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.filter-header img{
+    height:20px;
+    margin-left: 60px;
+}
+
+hr{
+    width:inherit;
+    text-align:left;
+    margin-left:0;
+    color:#9D9595;
+}
+
+br{
+    line-height: 7px;
+    font-size: 7px;
+}
+
+.catalog-container{
+    margin: 50px 40px 50px 30px;
+    width:70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+
+.catalog{
+    display: flex;
+
+}
+
+.catalog-card-container{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid #ffffff;
+    padding:10px;
+}
+
+.catalog-card-container label{
+    text-align: center;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    margin:3px 0;
+}
+
+.catalog-card-container img{
+    height: 240px;
+}
+
+.catalog-card-container:hover{
+    border:2px solid #9D9595;
+}
+
+#catalog-text{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    color:#ffffff;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:40%;
+}
