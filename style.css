@@ -1,3 +1,7 @@
+.background-catalog{
+    width: 100%;
+}
+
 
 .filters{
     font-family: 'Tenor Sans';
@@ -38,6 +42,7 @@ button{
   .filter ul li {
     margin: 5px 0 0 0px;
     line-height: 30px;
+    transition: all 0.3s;
   }
   input[type="checkbox"] {
     vertical-align: middle;
@@ -50,11 +55,13 @@ button{
     justify-content: space-between;
     font-size: 30px;
     margin-top: 10px;
+    transition: all 0.3s;
 }
 
 .filter-header img{
     height:20px;
     margin-left: 60px;
+    transition: all 0.3s;
 }
 
 hr{
@@ -89,6 +96,7 @@ br{
     flex-direction: column;
     border:2px solid #ffffff;
     padding:10px;
+    transition: all 0.3s;
 }
 
 .catalog-card-container label{
@@ -119,4 +127,22 @@ br{
     left: 50%;
     transform: translate(-50%, -50%);
     height:40%;
+}
+
+.catalog-container button{
+    background-color:#26271C;
+    color:#ffffff;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px auto;
+    padding: 5px 35px;
+    transition: background-color 0.3s;
+}
+
+.catalog-container button:hover{
+    background-color:#615c5c;
+
 }
