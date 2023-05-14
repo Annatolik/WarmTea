@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shoppingcart.css">
     <script src="form.js"></script>
     <link rel="icon" type="image/png" href="icons/titlepic.ico"/>
-    <title>теплочай</title>
+    <title>теплочай - про нас</title>
 </head>
 <body>
     <div id="home">
@@ -23,7 +24,7 @@
                 <img src="icons/account.png">
                 <p>акаунт</p>
             </div>
-            <div class = "cartButton">
+            <div id = "cartButton">
                 <p>кошик</p>
                 <img src="icons/basket.png">
             </div>
@@ -37,6 +38,14 @@
             <a href="contacts.html"><p>контакти</p></a>
         </div>
     </div>
+
+    <div id="overlay"></div>
+
+    <div id="cartContainer">
+      <button id="closeButton"></button>
+      <p>кошик</p>
+    </div>
+
     <div class="about-us-container">
         <h1>про нас</h1>
         <div class="about-us-imgs">

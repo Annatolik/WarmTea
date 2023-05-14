@@ -1,9 +1,10 @@
-let cartButton = document.querySelector("cartButton");
-let buyButton = document.querySelectorAll("to-cart");
+let cartButton = document.getElementById("cartButton");
 let closeButton = document.getElementById("closeButton");
 let cartContainer = document.getElementById("cartContainer");
 let overlay = document.getElementById("overlay");
 
+closeButton.style.backgroundColor = "white";
+closeButton.style.border = "none";
 cartButton.addEventListener("click", function() {
   openCart();
 });
@@ -21,18 +22,12 @@ let text = document.createTextNode("упс! тут ще порожньо!");
 span.appendChild(text);
 span.style.color = "#615c5c";
 span.classList.add("empty");
-let imageempty = document.createElement("img");
-imageempty.src = "icons/empty-cart.png";
-imageempty.classList.add("empty");
-imageempty.style.opacity = "0.4";
-imageempty.style.height = "100px";
 let hr = document.createElement("hr");
 hr.classList.add("empty");
 
 let cartontainer = document.createElement("div");
 cartontainer.appendChild(hr);
 cartontainer.appendChild(span);
-cartontainer.appendChild(imageempty);
 cartContainer.appendChild(cartontainer);
 
 let number = 1;
@@ -227,8 +222,6 @@ function addToCart(button) {
     }
 
   }
-
-
 
 function openCart() {
   cartContainer.classList.add("open");
