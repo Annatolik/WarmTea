@@ -1,4 +1,4 @@
-let cartButton = document.getElementById("cartButton");
+let cartButton = document.querySelector("cartButton");
 let buyButton = document.querySelectorAll("to-cart");
 let closeButton = document.getElementById("closeButton");
 let cartContainer = document.getElementById("cartContainer");
