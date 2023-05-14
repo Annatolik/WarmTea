@@ -109,7 +109,7 @@ br{
 }
 
 .catalog-card-container img{
-    height: 240px;
+    height: 60%;
 }
 
 .catalog-card-container:hover{
