@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/png" href="icons/titlepic.ico"/>
     <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="shoppingcart.css">
+    <link rel="stylesheet" href="shoppingcart.css">
     <title>теплочай - контакти</title>
 </head>
 <body>
@@ -67,7 +67,7 @@
                 <label for="transparent-input" class="input-label">Повідомлення</label>
                 <div class="input-line"></div>
             </div>
-            <button id="contacts_button">Надіслати</button>
+            <button id="contacts_button" onclick="sendMessage(this)">Надіслати</button>
         </div>
     </div>
 
@@ -103,7 +103,12 @@
         <img src = "icons/footericon.png">
         <p>teplotea(с)2023</p>
     </div>
+    <script>
+    function sendMessage(button) {
+        alert("дякуємо за звернення, повідомлення надіслано!");
+    }
+    </script>
     <script src="shoppingcart.js" defer></script>
-        <script src="weather.js" defer></script>
+    <script src="weather.js" defer></script>
 </body>
 </html>
