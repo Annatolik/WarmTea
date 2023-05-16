@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="shoppingcart.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shoppingcart.css" />
     <script src="form.js"></script>
-    <link rel="icon" type="image/png" href="icons/titlepic.ico"/>
+    <link rel="icon" type="image/png" href="icons/titlepic.ico" />
     <title>теплочай - головна</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="home">
-        <div class="right">
-            <div>
-                <img src="icons/temp.png">
-                <p id = "temp"></p>
-            </div>
-            <div>
-                <img src="icons/account.png">
-                <p>акаунт</p>
-            </div>
-            <div id = "cartButton">
-                <p>кошик</p>
-                <img src="icons/basket.png">
-            </div>
+      <div class="right">
+        <div>
+          <img src="icons/temp.png" />
+          <p id="temp"></p>
         </div>
-        <div class="name">
-            <a href="index.html"><p>теплочай</p></a>
+        <div>
+          <img src="icons/account.png" />
+          <a href="login.html"><p>акаунт</p></a>
         </div>
-        <div class="left">
-            <a href="catalog.html"><p>магазин</p></a>
-            <a href="aboutus.html"><p>про нас</p></a>
-            <a href="contacts.html"><p>контакти</p></a>
+        <div id="cartButton">
+          <p>кошик</p>
+          <img src="icons/basket.png" />
         </div>
+      </div>
+      <div class="name">
+        <a href="index.html"><p>теплочай</p></a>
+      </div>
+      <div class="left">
+        <a href="catalog.html"><p>магазин</p></a>
+        <a href="aboutus.html"><p>про нас</p></a>
+        <a href="contacts.html"><p>контакти</p></a>
+      </div>
     </div>
     <div id="overlay"></div>
     <div id="cartContainer">
@@ -46,112 +55,120 @@
       <p>кошик</p>
     </div>
     <div class="background">
-        <img class="background_photo" src="icons/background1.png">
-        <div class="icon_div">
-            <img id="icon" src="icons/icon.png">
-            <div id="under_icon">
-                <h1 class="under_icon_name">ЛЮБОВ У ФІЛІЖАНЦІ</h1>
-                <p class="under_name">мистецтво насолоджуватися кожним ковтком</p>
-            </div>
+      <img class="background_photo" src="icons/background1.png" />
+      <div class="icon_div">
+        <img id="icon" src="icons/icon.png" />
+        <div id="under_icon">
+          <h1 class="under_icon_name">ЛЮБОВ У ФІЛІЖАНЦІ</h1>
+          <p class="under_name">мистецтво насолоджуватися кожним ковтком</p>
         </div>
+      </div>
     </div>
     <div class="tea">
-        <div class="black_tea">
-            <img src="icons/black_tea.png">
-            <p class="black_tea_text">чорний</p>
-        </div>
-        <div class="herbs_tea">
-            <img src="icons/herbs_tea.png">
-            <p class="herbs_tea_text">трав'яний</p>
-        </div>
-        <div class="green_tea">
-            <img src="icons/green_tea.png">
-            <p class="green_tea_text">зелений</p>
-        </div>
+      <div class="black_tea">
+        <img src="icons/black_tea.png" />
+        <p class="black_tea_text">чорний</p>
+      </div>
+      <div class="herbs_tea">
+        <img src="icons/herbs_tea.png" />
+        <p class="herbs_tea_text">трав'яний</p>
+      </div>
+      <div class="green_tea">
+        <img src="icons/green_tea.png" />
+        <p class="green_tea_text">зелений</p>
+      </div>
     </div>
     <div class="text_why">
-        <h4 id="why">чому обирають нас?</h4>
-        <ul class="reason_why">
-            <li>більше 100 смаків, серед яких ви обов’язково знайдете “той самий”</li>
-            <li>завжди на крок попереду. шукаємо нові чаї, смаки та дизайни</li>
-            <li>залюбки допоможемо обрати саме той чай, який вам точно сподобається</li>
-            <li>ретельно відстежуємо якість чаю - від плантації до пакета у ваших руках</li>
-        </ul>
-        <img id="icon_why" src="icons/why.png">
+      <h4 id="why">чому обирають нас?</h4>
+      <ul class="reason_why">
+        <li>
+          більше 100 смаків, серед яких ви обов’язково знайдете “той самий”
+        </li>
+        <li>завжди на крок попереду. шукаємо нові чаї, смаки та дизайни</li>
+        <li>
+          залюбки допоможемо обрати саме той чай, який вам точно сподобається
+        </li>
+        <li>
+          ретельно відстежуємо якість чаю - від плантації до пакета у ваших
+          руках
+        </li>
+      </ul>
+      <img id="icon_why" src="icons/why.png" />
     </div>
     <div class="tea_history">
-        <img src="icons/history.png">
-        <div class="history_text">
-            <h4 id="history_h">ЗДАВНА ДОТЕПЕР</h4>
-            <p id="tea_history_text">китайська чайна культура з часів найдавніших імператорських династій і до наших днів демонструє, що чашка чаю - це більше, ніж просто напій.</p>
-        </div>
+      <img src="icons/history.png" />
+      <div class="history_text">
+        <h4 id="history_h">ЗДАВНА ДОТЕПЕР</h4>
+        <p id="tea_history_text">
+          китайська чайна культура з часів найдавніших імператорських династій і
+          до наших днів демонструє, що чашка чаю - це більше, ніж просто напій.
+        </p>
+      </div>
     </div>
-    
+
     <div class="sort_of_tea">
-        <div class="choose_tea">
-            <h4 id="choose_h">ОБРАТИ СМАК</h4>
-            <p>який вид чаю обереш для<br>домашньої чайної церемонії?</p>
+      <div class="choose_tea">
+        <h4 id="choose_h">ОБРАТИ СМАК</h4>
+        <p>який вид чаю обереш для<br />домашньої чайної церемонії?</p>
+      </div>
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+          <img src="icons/tea_1.png" alt="img" draggable="false" />
+          <img src="icons/tea_2.png" alt="img" draggable="false" />
+          <img src="icons/tea_3.png" alt="img" draggable="false" />
+          <img src="icons/tea_4.png" alt="img" draggable="false" />
+          <img src="icons/tea_5.png" alt="img" draggable="false" />
+          <img src="icons/tea_6.png" alt="img" draggable="false" />
+          <img src="icons/tea_7.png" alt="img" draggable="false" />
+          <img src="icons/tea_8.png" alt="img" draggable="false" />
         </div>
-        <div class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carousel">
-              <img src="icons/tea_1.png" alt="img" draggable="false">
-              <img src="icons/tea_2.png" alt="img" draggable="false">
-              <img src="icons/tea_3.png" alt="img" draggable="false">
-              <img src="icons/tea_4.png" alt="img" draggable="false">
-              <img src="icons/tea_5.png" alt="img" draggable="false">
-              <img src="icons/tea_6.png" alt="img" draggable="false">
-              <img src="icons/tea_7.png" alt="img" draggable="false">
-              <img src="icons/tea_8.png" alt="img" draggable="false">
-            </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
     </div>
     <div class="want_tea">
-        <div class="want_tea_text">
-            <h3 id="want_tea_h">чаю?</h3>
-            <p>це як теплі обійми.<br>тільки в чашці.</p>
-        </div>
-        <img src="icons/tea-back.png">
-    </div>
-      
-
-    <div id = "footer">
-        <div>
-            <h1 >зв'язатись з нами</h1>
-            <div class="footerconnect">
-                <div>
-                    <img src = "icons/building.png">
-                    <p >м. Львів, вул. С. Бандери 11</p>
-                </div>
-                <div>
-                    <img style="width:20px; height:15px;" src = "icons/mail.png">
-                    <p>teplotea@gmail.com</p>
-                </div>
-                <div>
-                    <img src = "icons/phone.png">
-                    <p>+38077777777</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <h1 id = "teplofooter">теплочай</h1>
-            <p>обери свій унікальний смак для</p>
-            <p>домашньої чайної церемонії</p>
-        </div>
-        <div>
-            <h1>оплата</h1>
-            <img src="icons/debetcards.png">
-        </div>
-    </div>
-    <div id = "footerlight">
-        <img src = "icons/footericon.png">
-        <p>teplotea(с)2023</p>
+      <div class="want_tea_text">
+        <h3 id="want_tea_h">чаю?</h3>
+        <p>це як теплі обійми.<br />тільки в чашці.</p>
+      </div>
+      <img src="icons/tea-back.png" />
     </div>
 
+    <div id="footer">
+      <div>
+        <h1>зв'язатись з нами</h1>
+        <div class="footerconnect">
+          <div>
+            <img src="icons/building.png" />
+            <p>м. Львів, вул. С. Бандери 11</p>
+          </div>
+          <div>
+            <img style="width: 20px; height: 15px" src="icons/mail.png" />
+            <p>teplotea@gmail.com</p>
+          </div>
+          <div>
+            <img src="icons/phone.png" />
+            <p>+38077777777</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 id="teplofooter">теплочай</h1>
+        <p>обери свій унікальний смак для</p>
+        <p>домашньої чайної церемонії</p>
+      </div>
+      <div>
+        <h1>оплата</h1>
+        <img src="icons/debetcards.png" />
+      </div>
+    </div>
+    <div id="footerlight">
+      <img src="icons/footericon.png" />
+      <p>teplotea(с)2023</p>
+    </div>
 
     <script src="main.js"></script>
     <script src="shoppingcart.js" defer></script>
-        <script src="weather.js" defer></script>
-</body>
+    <script src="weather.js" defer></script>
+  </body>
 </html>

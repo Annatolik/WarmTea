@@ -1,263 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="catalog.css">
-    <link rel="stylesheet" href="shoppingcart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="shoppingcart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-    <link rel="icon" type="image/png" href="icons/titlepic.ico"/>
+    <link rel="icon" type="image/png" href="icons/titlepic.ico" />
     <title>теплочай - магазин</title>
-</head>
-<body>
-        <div id="home">
-        <div class="right">
-            <div>
-                <img src="icons/temp.png">
-                <p id = "temp"></p>
-            </div>
-            <div>
-                <img src="icons/account.png">
-                <p>акаунт</p>
-            </div>
-            <div id = "cartButton">
-                <p>кошик</p>
-                <img src="icons/basket.png">
-            </div>
+  </head>
+  <body>
+    <div id="home">
+      <div class="right">
+        <div>
+          <img src="icons/temp.png" />
+          <p id="temp"></p>
         </div>
-        <div class="name">
-            <a href="index.html"><p>теплочай</p></a>
+        <div>
+          <img src="icons/account.png" />
+          <a href="login.html"><p>акаунт</p></a>
         </div>
-        <div class="left">
-            <a href="catalog.html"><p>магазин</p></a>
-            <a href="aboutus.html"><p>про нас</p></a>
-            <a href="contacts.html"><p>контакти</p></a>
+        <div id="cartButton">
+          <p>кошик</p>
+          <img src="icons/basket.png" />
         </div>
+      </div>
+      <div class="name">
+        <a href="index.html"><p>теплочай</p></a>
+      </div>
+      <div class="left">
+        <a href="catalog.html"><p>магазин</p></a>
+        <a href="aboutus.html"><p>про нас</p></a>
+        <a href="contacts.html"><p>контакти</p></a>
+      </div>
     </div>
-    
+
     <div id="overlay"></div>
-    
+
     <div id="cartContainer">
       <button id="closeButton"></button>
       <p>кошик</p>
     </div>
-            <img class="background-catalog" src="icons/catalogpic2.png">
-            <h1 id = "catalog-text">каталог</h1>
+    <img class="background-catalog" src="icons/catalogpic2.png" />
+    <h1 id="catalog-text">каталог</h1>
     <div class="catalog">
-    <div class = "filters">
+      <div class="filters">
         <div class="filter">
-            <div class = "filter-header">
-                <span>вид</span>
-                <button class="options-toggle-type"><img id="type-plus" src = "icons/plus.png"></button>
-            </div>
-            <ul class="options-type">
-              <li><label><input id="green" type="checkbox" name="option1">зелений</label></li>
-              <li><label><input id="black" type="checkbox" name="option2">чорний</label></li>
-              <li><label><input id="white" type="checkbox" name="option3">білий</label></li>
-              <li><label><input id="grassy" type="checkbox" name="option4">трав’яний</label></li>
-              <li><label><input id="flowery" type="checkbox" name="option5">квітковий</label></li>
-              <li><label><input id="red" type="checkbox" name="option6">червоний</label></li>
-              <br>
-            </ul>
-       </div>
-       <hr>
-       <div class="filter">
-        <div class = "filter-header">
+          <div class="filter-header">
+            <span>вид</span>
+            <button class="options-toggle-type">
+              <img id="type-plus" src="icons/plus.png" />
+            </button>
+          </div>
+          <ul class="options-type">
+            <li>
+              <label
+                ><input
+                  id="green"
+                  type="checkbox"
+                  name="option1"
+                />зелений</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="black"
+                  type="checkbox"
+                  name="option2"
+                />чорний</label
+              >
+            </li>
+            <li>
+              <label
+                ><input id="white" type="checkbox" name="option3" />білий</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="grassy"
+                  type="checkbox"
+                  name="option4"
+                />трав’яний</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="flowery"
+                  type="checkbox"
+                  name="option5"
+                />квітковий</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="red"
+                  type="checkbox"
+                  name="option6"
+                />червоний</label
+              >
+            </li>
+            <br />
+          </ul>
+        </div>
+        <hr />
+        <div class="filter">
+          <div class="filter-header">
             <span>вміст кофеїну</span>
-            <button class="options-toggle-caffeine"><img id="caffeine-plus" src = "icons/plus.png"></button>
+            <button class="options-toggle-caffeine">
+              <img id="caffeine-plus" src="icons/plus.png" />
+            </button>
+          </div>
+          <ul class="options-caffeine">
+            <li>
+              <label
+                ><input
+                  id="high"
+                  type="checkbox"
+                  name="option1"
+                />високий</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="average"
+                  type="checkbox"
+                  name="option2"
+                />середній</label
+              >
+            </li>
+            <li>
+              <label
+                ><input id="low" type="checkbox" name="option3" />низький</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="none"
+                  type="checkbox"
+                  name="option4"
+                />відсутній</label
+              >
+            </li>
+            <br />
+          </ul>
         </div>
-        <ul class="options-caffeine">
-          <li><label><input id="high" type="checkbox" name="option1">високий</label></li>
-          <li><label><input id="average" type="checkbox" name="option2">середній</label></li>
-          <li><label><input id="low" type="checkbox" name="option3">низький</label></li>
-          <li><label><input id="none" type="checkbox" name="option4">відсутній</label></li>
-          <br>
-        </ul>
-        </div>
-        <hr>
+        <hr />
         <div class="filter">
-            <div class = "filter-header">
-                <span>смак</span>
-                <button class="options-toggle-taste"><img id="taste-plus" src = "icons/plus.png"></button>
-            </div>
-            <ul class="options-taste">
-              <li><label><input id="sweet" type="checkbox" name="option1">солодкий</label></li>
-              <li><label><input id="spicy" type="checkbox" name="option1">пряний</label></li>
-              <li><label><input id="fruity" type="checkbox" name="option4">фруктово-ягідний</label></li>
-              <li><label><input id="mint" type="checkbox" name="option6">м'ятний</label></li>
-              <li><label><input id="astringent" type="checkbox" name="option6">терпкий</label></li>
-              <li><label><input id="sour" type="checkbox" name="option6">кислий</label></li>
-              <br>
-            </ul>
-       </div>
-       <hr>
-       <div class="filter">
-        <div class = "filter-header">
+          <div class="filter-header">
+            <span>смак</span>
+            <button class="options-toggle-taste">
+              <img id="taste-plus" src="icons/plus.png" />
+            </button>
+          </div>
+          <ul class="options-taste">
+            <li>
+              <label
+                ><input
+                  id="sweet"
+                  type="checkbox"
+                  name="option1"
+                />солодкий</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="spicy"
+                  type="checkbox"
+                  name="option1"
+                />пряний</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="fruity"
+                  type="checkbox"
+                  name="option4"
+                />фруктово-ягідний</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="mint"
+                  type="checkbox"
+                  name="option6"
+                />м'ятний</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="astringent"
+                  type="checkbox"
+                  name="option6"
+                />терпкий</label
+              >
+            </li>
+            <li>
+              <label
+                ><input id="sour" type="checkbox" name="option6" />кислий</label
+              >
+            </li>
+            <br />
+          </ul>
+        </div>
+        <hr />
+        <div class="filter">
+          <div class="filter-header">
             <span>країна</span>
-            <button class="options-toggle-country"><img id="country-plus" src = "icons/plus.png"></button>
+            <button class="options-toggle-country">
+              <img id="country-plus" src="icons/plus.png" />
+            </button>
+          </div>
+          <ul class="options-country">
+            <li>
+              <label
+                ><input id="china" type="checkbox" name="option1" />Китай</label
+              >
+            </li>
+            <li>
+              <label
+                ><input id="india" type="checkbox" name="option2" />Індія</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="japan"
+                  type="checkbox"
+                  name="option3"
+                />Японія</label
+              >
+            </li>
+            <li>
+              <label
+                ><input
+                  id="indonesia"
+                  type="checkbox"
+                  name="option5"
+                />Індонезія</label
+              >
+            </li>
+            <br />
+          </ul>
         </div>
-        <ul class="options-country">
-          <li><label><input id="china" type="checkbox" name="option1">Китай</label></li>
-          <li><label><input id="india" type="checkbox" name="option2">Індія</label></li>
-          <li><label><input id="japan" type="checkbox" name="option3">Японія</label></li>
-          <li><label><input id="indonesia" type="checkbox" name="option5">Індонезія</label></li>
-          <br>
-        </ul>
-   </div>
-    </div>
+      </div>
 
-    <div class="catalog-container">
+      <div class="catalog-container">
         <div class="catalog-card-container green astringent high china">
-            <img src="tea-catalog/tea1.png">
-            <label>Gunpowder</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea1.png" />
+          <label>Gunpowder</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container green astringent high china">
-            <img src="tea-catalog/tea2.png">
-            <label>Jasmine</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea2.png" />
+          <label>Jasmine</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container green mint high china">
-            <img src="tea-catalog/tea3.png">
-            <label>Sencha</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea3.png" />
+          <label>Sencha</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container black flowery spicy average china">
-            <img src="tea-catalog/tea4.png">
-            <label>Earl Gray</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea4.png" />
+          <label>Earl Gray</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container black spicy average china">
-            <img src="tea-catalog/tea5.png">
-            <label>English breakfast</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea5.png" />
+          <label>English breakfast</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container black flowery sweet low india">
-            <img src="tea-catalog/tea6.png">
-            <label>Honey Mango</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea6.png" />
+          <label>Honey Mango</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container grassy mint average india">
-            <img src="tea-catalog/tea7.png">
-            <label>Detox</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea7.png" />
+          <label>Detox</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container white grassy flowery sweet fruity none india">
-            <img src="tea-catalog/tea8.png">
-            <label>Alpine Field</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+        <div
+          class="catalog-card-container white grassy flowery sweet fruity none india"
+        >
+          <img src="tea-catalog/tea8.png" />
+          <label>Alpine Field</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container black flowery sweet none india">
-            <img src="tea-catalog/tea9.png">
-            <label>Champagne Splashes</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea9.png" />
+          <label>Champagne Splashes</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container red spicy low india">
-            <img src="tea-catalog/tea10.png">
-            <label>Red Dragon</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea10.png" />
+          <label>Red Dragon</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container green grassy mint average japan">
-            <img src="tea-catalog/tea11.png">
-            <label>Green Ginger</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea11.png" />
+          <label>Green Ginger</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container green sour low japan">
-            <img src="tea-catalog/tea12.png">
-            <label>Soursop</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea12.png" />
+          <label>Soursop</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container green flowery mint spicy none japan">
-            <img src="tea-catalog/tea13.png">
-            <label>Mint Fantasy</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea13.png" />
+          <label>Mint Fantasy</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container red sweet fruity none japan">
-            <img src="tea-catalog/tea14.png">
-            <label>Strawberry Rooibos</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea14.png" />
+          <label>Strawberry Rooibos</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container flowery astringent none indonesia">
-            <img src="tea-catalog/tea15.png">
-            <label>Camomile</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea15.png" />
+          <label>Camomile</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container grassy flowery red sweet none indonesia">
-            <img src="tea-catalog/tea16.png">
-            <label>Royal Dessert</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+        <div
+          class="catalog-card-container grassy flowery red sweet none indonesia"
+        >
+          <img src="tea-catalog/tea16.png" />
+          <label>Royal Dessert</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
         <div class="catalog-card-container green astringent low indonesia">
-            <img src="tea-catalog/tea17.png">
-            <label>Milk Oolong</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+          <img src="tea-catalog/tea17.png" />
+          <label>Milk Oolong</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container grassy flowery red sweet fruity low indonesia">
-            <img src="tea-catalog/tea18.png">
-            <label>Strawberry</label>
-            <label>12 UAH/шт</label>
-            <button onclick="addToCart(this)">купити</button>
+        <div
+          class="catalog-card-container grassy flowery red sweet fruity low indonesia"
+        >
+          <img src="tea-catalog/tea18.png" />
+          <label>Strawberry</label>
+          <label>12 UAH/шт</label>
+          <button onclick="addToCart(this)">купити</button>
         </div>
+      </div>
     </div>
-</div>
 
-    <div id = "footer">
-        <div>
-            <h1 >зв'язатись з нами</h1>
-            <div class="footerconnect">
-                <div>
-                    <img src = "icons/building.png">
-                    <p >м. Львів, вул. С. Бандери 11</p>
-                </div>
-                <div>
-                    <img style="width:20px; height:15px;" src = "icons/mail.png">
-                    <p>teplotea@gmail.com</p>
-                </div>
-                <div>
-                    <img src = "icons/phone.png">
-                    <p>+38077777777</p>
-                </div>
-            </div>
+    <div id="footer">
+      <div>
+        <h1>зв'язатись з нами</h1>
+        <div class="footerconnect">
+          <div>
+            <img src="icons/building.png" />
+            <p>м. Львів, вул. С. Бандери 11</p>
+          </div>
+          <div>
+            <img style="width: 20px; height: 15px" src="icons/mail.png" />
+            <p>teplotea@gmail.com</p>
+          </div>
+          <div>
+            <img src="icons/phone.png" />
+            <p>+38077777777</p>
+          </div>
         </div>
-        <div>
-            <h1 id = "teplofooter">теплочай</h1>
-            <p>обери свій унікальний смак для</p>
-            <p>домашньої чайної церемонії</p>
-        </div>
-        <div>
-            <h1>оплата</h1>
-            <img src="icons/debetcards.png">
-        </div>
+      </div>
+      <div>
+        <h1 id="teplofooter">теплочай</h1>
+        <p>обери свій унікальний смак для</p>
+        <p>домашньої чайної церемонії</p>
+      </div>
+      <div>
+        <h1>оплата</h1>
+        <img src="icons/debetcards.png" />
+      </div>
     </div>
-    <div id = "footerlight">
-        <img src = "icons/footericon.png">
-        <p>teplotea(с)2023</p>
+    <div id="footerlight">
+      <img src="icons/footericon.png" />
+      <p>teplotea(с)2023</p>
     </div>
     <script src="catalog.js" defer></script>
-        <script src="weather.js" defer></script>
+    <script src="weather.js" defer></script>
     <script src="shoppingcart.js" defer></script>
-</body>
+  </body>
 </html>
