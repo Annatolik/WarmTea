@@ -442,6 +442,199 @@ a{
     color: #ffffff;
 }
 
+/* log in page*/
+
+.log_in{
+    width: 100%;
+    margin-top: 124px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    font-family: 'Tenor Sans';
+}
+
+.log_in img{
+    width: 100%;
+    
+}
+.log_in_body{
+    position: absolute;
+    width: 90%;
+    height: 609px;
+    margin-top: 203px;
+    margin-left: 77px;
+    background: rgba(66, 69, 48, 0.94);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.log_in h2 {
+    margin-top: 7%;
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 40px;
+    text-align: center;
+    left: 50%;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+  
+@media screen and (max-width: 768px) {
+    .log_in h2 {
+      font-size: 50px;
+      line-height: 30px;
+    }
+}
+
+
+.log_in_text{
+    position: absolute;
+    display: flex;
+    margin-left: 10%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0px;
+    flex-direction: column;
+    width: 500px;
+    padding: 20px 40px;
+    color: rgba(255, 255, 255, 0.63);
+
+}
+  
+.log_in_input{
+    position: relative;
+    margin-top: 120px;
+    width: 500px;
+  
+}
+
+.log_in_label{
+    position: absolute;
+    width: 100%;
+    height: 52px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    margin-top: -20px;
+    margin-left: 50%;
+    transition: all 0.2s ease-out;
+}
+
+.log_in_text_bright{
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    margin-left: 50%;
+    transition: all 0.2s ease-out;
+}
+   
+.log_in_line{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    margin-top: 20px;
+    margin-left: 50%;
+    border: 2px solid;
+}
+
+.log_in_label:focus + .log_in_text_bright,
+.log_in_label:not(:placeholder-shown) + .log_in_text_bright {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+#log_in_button {
+    width: 230px;
+    height: 55px;
+    background: #667160;
+    align-self: center;
+    margin-top: 70px;
+    margin-left: 100%;
+    border: 0;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: none;
+    transition: background 0.3s ease;
+}
+
+#log_in_button:active {
+    background: rgba(113, 118, 111, 0.314)
+}
+
+.log_in_text p{
+    position: relative;
+    margin-top: 42px;
+    left: 50%;
+    font-size: 23px;
+    font-style: normal;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+/* sign up page*/
+
+.sign_up_body{
+    position: absolute;
+    width: 90%;
+    height: 609px;
+    margin-top: 203px;
+    margin-left: 77px;
+    background: rgba(100, 64, 20, 0.87);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.sign_up_input{
+    position: relative;
+    margin-top: 95px;
+    width: 500px;
+  
+}
+
+#sign_up_button {
+    width: 230px;
+    height: 55px;
+    background: #4B3112;
+    align-self: center;
+    margin-top: 70px;
+    margin-left: 100%;
+    border: 0;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: none;
+    transition: background 0.3s ease;
+}
+
+#sign_up_button:active {
+    background: #342514;
+}
+
 
 /* about us page */
 
