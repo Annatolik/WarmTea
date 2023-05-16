@@ -18,6 +18,7 @@ a{
     top: 0;
     left: 0;
     right: 0;
+    transition: top 0.2s ease-in-out;
 }
 
 .left, .right, .name{
@@ -392,7 +393,7 @@ a{
     border: none;
     outline: none;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
     background-color: transparent;
     width: 100%;
     height: 30px;
@@ -440,8 +441,14 @@ a{
     font-weight: 400;
     font-size: 18px;    
     color: #ffffff;
+    border: 0;
+    box-shadow: none;
+    transition: background 0.3s ease;
 }
 
+#contacts_button:active {
+    background: rgba(113, 118, 111, 0.314)
+}
 /* log in page*/
 
 .log_in{
