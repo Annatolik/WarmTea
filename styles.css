@@ -239,7 +239,7 @@ a{
     background: #E09132;
     height: 460px;
     flex-direction: row;
-    margin-bottom: 110px;
+    margin-bottom: 130px;
 }
 
 .want_tea img{
@@ -343,6 +343,63 @@ a{
       width: 100%;
     }
   }
+
+
+#tea_by_weather_icon{
+    width: 260px;
+}
+
+.tea_by_temp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 110px;
+}
+
+.tea_by_weather_icon_t1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+#tea_by_weather_t2{
+    width: 400px;
+}
+
+.tea_by_weather{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.tea_by_temp_text2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tea_by_temp h4, .tea_by_temp p{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin: 0px;
+}
+
+
+.tea_by_temp h4{
+    font-size: 28px;
+}
+
+.tea_by_temp h4{
+    margin-bottom: 26px;
+}
+
+
+
 
 /* contacts page */
 
