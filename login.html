@@ -11,7 +11,8 @@
     <link rel="icon" type="image/png" href="icons/titlepic.ico" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="shoppingcart.css" />
-    <title>вхід</title>
+    <link rel="stylesheet" href="adaptive.css" />
+    <title>теплочай - вхід</title>
   </head>
   <body>
     <div id="home">
@@ -37,6 +38,22 @@
         <a href="aboutus.html"><p>про нас</p></a>
         <a href="contacts.html"><p>контакти</p></a>
       </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html"><p>головна</p></a>
+      <a href="catalog.html"><p>магазин</p></a>
+      <a href="aboutus.html"><p>про нас</p></a>
+      <a href="contacts.html"><p>контакти</p></a>
+      <a href="login.html"><p>акаунт</p></a>
+      <a class="cartButton2"><p>кошик</p></a>
+    </div>
+    <span style="cursor:pointer" onclick="openNav()"><img class = "openmenu" src="icons/hamburger.png" /> </span>
+    <div id="overlay"></div>
+
+    <div id="cartContainer">
+      <button id="closeButton"></button>
+      <p>кошик</p>
     </div>
 
     <div class="log_in">

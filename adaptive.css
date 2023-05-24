@@ -1,0 +1,149 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #26271C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 0px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: all 0.3s;
+  color:#FFFFFF;
+  font-family: 'Tenor Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sidenav a:hover {
+    color:#555555;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-size: 36px;
+  margin-right: 70px;
+}
+
+.openmenu{
+    margin:10px;
+    height:30px;
+}
+
+@media (max-width: 600px) {
+  .catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .catalog-card-container {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .filter-header{
+    font-size: 16px;
+  }
+  .filters{
+      font-size: 16px;
+    width:150px;
+  }
+      #home {
+        display: none;
+    }
+
+    .sidenav{
+      display:block;
+     }
+    .openmenu{
+      display:block;
+     }
+        .background-catalog{
+    display:none;
+    }
+            #catalog-text{
+    font-size: 40px;
+    color:black;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: none;
+    height:10%;
+    z-index:9999;
+        text-align: center;
+}
+  #footer{
+        display:none;
+  }
+}
+@media (max-width: 1100px) {
+    .contacts img{
+    display:none;
+}
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  #footer h1{
+        display:none;
+  }
+  #footer div img {
+    display:none;
+  }
+  .catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+    .catalog-card-container {
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid #ffffff;
+    padding:10px;
+    transition: all 0.3s;
+  }
+    #home {
+        display: none;
+    }
+
+    .sidenav{
+      display:block;
+     }
+    .openmenu{
+      display:block;
+     }
+      .filters{
+    width:150px;
+      font-size: 16px;
+  }
+        .filter-header{
+    font-size: 16px;
+  }
+    .background-catalog{
+    display:none;
+    }
+    #catalog-text{
+    font-size: 40px;
+    color:black;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: none;
+    height:10%;
+    z-index:9999;
+        text-align: center;
+}
+}
