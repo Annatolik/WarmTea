@@ -1,9 +1,14 @@
-let cartButton = document.getElementById("cartButton");
+let cartButton1 = document.getElementById("cartButton1");
+let cartButton2 = document.getElementById("cartButton2");
 let closeButton = document.getElementById("closeButton");
 let cartContainer = document.getElementById("cartContainer");
 let overlay = document.getElementById("overlay");
 
-cartButton.addEventListener("click", function() {
+cartButton1.addEventListener("click", function() {
+  openCart();
+});
+
+cartButton2.addEventListener("click", function() {
   openCart();
 });
 
