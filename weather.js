@@ -14,12 +14,8 @@ function getData(){
             console.log(JSON.stringify(weather))
             const d = new Date();
             let hour = d.getHours();
-            const testDiv  = document.createElement('div');
             const testDiv2  = document.createElement('div');
-            testDiv.className='test';
             let currentTemperature = weather.hourly.temperature_2m[hour];
-            testDiv.innerHTML=`<p>${currentTemperature}&degC</p>`
-            document.getElementById("temp").appendChild(testDiv);
             testDiv2.innerHTML=`<p>Температура на вулиці зараз ${currentTemperature}&degC, тому в таку погоду ми рекомендуємо вам випити цей чай:</p>`
             document.getElementById("tea_by_temp_text2").appendChild(testDiv2);
             const weatherIcon = document.getElementById("tea_by_weather_icon");
