@@ -1,11 +1,16 @@
-let cartButton = document.getElementById("cartButton");
+let cartButton1 = document.querySelector(".cartButton1");
+let cartButton2 = document.querySelector(".cartButton2");
 let closeButton = document.getElementById("closeButton");
 let cartContainer = document.getElementById("cartContainer");
 let overlay = document.getElementById("overlay");
 
 closeButton.style.backgroundColor = "white";
 closeButton.style.border = "none";
-cartButton.addEventListener("click", function() {
+cartButton1.addEventListener("click", function() {
+  openCart();
+});
+
+cartButton2.addEventListener("click", function() {
   openCart();
 });
 
@@ -168,7 +173,7 @@ function addToCart(button) {
 
     item.appendChild(weight);
 
-    var butt = document.createElement("button");
+    let butt = document.createElement("button");
     butt.addEventListener("click", function() {
       item.remove();
       subtotal -= 12*number;
@@ -234,7 +239,7 @@ function closeCart() {
 }
 
 
-var ALERT_BUTTON_TEXT = "ок";
+const ALERT_BUTTON_TEXT = "ок";
 
 if(document.getElementById) {
     window.alert = function(txt) {

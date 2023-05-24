@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
+    <meta http-equiv="content-language" content="ua">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,7 +37,7 @@
           <img src="icons/account.png" />
           <a href="login.html"><p>акаунт</p></a>
         </div>
-        <div id="cartButton">
+        <div class="cartButton1">
           <p>кошик</p>
           <img src="icons/basket.png" />
         </div>
@@ -50,6 +51,7 @@
         <a href="contacts.html"><p>контакти</p></a>
       </div>
     </div>
+
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html"><p>головна</p></a>
@@ -60,12 +62,14 @@
       <a class="cartButton2"><p>кошик</p></a>
     </div>
     <span style="cursor:pointer" onclick="openNav()"><img class = "openmenu" src="icons/hamburger.png" /> </span>
+
     <div id="overlay"></div>
 
     <div id="cartContainer">
       <button id="closeButton"></button>
       <p>кошик</p>
     </div>
+
     <img class="background-catalog" src="icons/catalogpic2.png" />
     <h1 id="catalog-text">каталог</h1>
     <div class="catalog">
@@ -143,7 +147,7 @@
             <li>
               <label
                 ><input
-                  id="high"
+                  id="high-caffeine"
                   type="checkbox"
                   name="option1"
                 />високий</label
@@ -152,7 +156,7 @@
             <li>
               <label
                 ><input
-                  id="average"
+                  id="average-caffeine"
                   type="checkbox"
                   name="option2"
                 />середній</label
@@ -160,13 +164,13 @@
             </li>
             <li>
               <label
-                ><input id="low" type="checkbox" name="option3" />низький</label
+                ><input id="low-caffeine" type="checkbox" name="option3" />низький</label
               >
             </li>
             <li>
               <label
                 ><input
-                  id="none"
+                  id="none-caffeine"
                   type="checkbox"
                   name="option4"
                 />відсутній</label
@@ -280,116 +284,116 @@
       </div>
 
       <div class="catalog-container">
-        <div class="catalog-card-container green astringent high china">
-          <img src="tea-catalog/tea1.png" />
+        <div class="catalog-card-container green astringent high-caffeine china">
+          <img src="tea-catalog/tea1.png" onclick="showProperties(this)" />
           <label>Gunpowder</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container green astringent high china">
-          <img src="tea-catalog/tea2.png" />
+        <div class="catalog-card-container green astringent high-caffeine china">
+          <img src="tea-catalog/tea2.png" onclick="showProperties(this)"/>
           <label>Jasmine</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container green mint high china">
-          <img src="tea-catalog/tea3.png" />
+        <div class="catalog-card-container green mint high-caffeine china">
+          <img src="tea-catalog/tea3.png" onclick="showProperties(this)"/>
           <label>Sencha</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container black flowery spicy average china">
-          <img src="tea-catalog/tea4.png" />
+        <div class="catalog-card-container black flowery spicy average-caffeine china">
+          <img src="tea-catalog/tea4.png" onclick="showProperties(this)"/>
           <label>Earl Gray</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container black spicy average china">
-          <img src="tea-catalog/tea5.png" />
+        <div class="catalog-card-container black spicy average-caffeine china">
+          <img src="tea-catalog/tea5.png" onclick="showProperties(this)"/>
           <label>English breakfast</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container black flowery sweet low india">
-          <img src="tea-catalog/tea6.png" />
+        <div class="catalog-card-container black flowery sweet low-caffeine india">
+          <img src="tea-catalog/tea6.png" onclick="showProperties(this)"/>
           <label>Honey Mango</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container grassy mint average india">
-          <img src="tea-catalog/tea7.png" />
+        <div class="catalog-card-container grassy mint average-caffeine india">
+          <img src="tea-catalog/tea7.png" onclick="showProperties(this)"/>
           <label>Detox</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
         <div
-          class="catalog-card-container white grassy flowery sweet fruity none india"
+          class="catalog-card-container white grassy flowery sweet fruity none-caffeine india"
         >
-          <img src="tea-catalog/tea8.png" />
+          <img src="tea-catalog/tea8.png" onclick="showProperties(this)"/>
           <label>Alpine Field</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container black flowery sweet none india">
-          <img src="tea-catalog/tea9.png" />
+        <div class="catalog-card-container black flowery sweet none-caffeine india">
+          <img src="tea-catalog/tea9.png" onclick="showProperties(this)"/>
           <label>Champagne Splashes</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container red spicy low india">
-          <img src="tea-catalog/tea10.png" />
+        <div class="catalog-card-container red spicy low-caffeine india">
+          <img src="tea-catalog/tea10.png" onclick="showProperties(this)"/>
           <label>Red Dragon</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container green grassy mint average japan">
-          <img src="tea-catalog/tea11.png" />
+        <div class="catalog-card-container green grassy mint average-caffeine japan">
+          <img src="tea-catalog/tea11.png" onclick="showProperties(this)"/>
           <label>Green Ginger</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container green sour low japan">
-          <img src="tea-catalog/tea12.png" />
+        <div class="catalog-card-container green sour low-caffeine japan">
+          <img src="tea-catalog/tea12.png" onclick="showProperties(this)"/>
           <label>Soursop</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container green flowery mint spicy none japan">
-          <img src="tea-catalog/tea13.png" />
+        <div class="catalog-card-container green flowery mint spicy none-caffeine japan">
+          <img src="tea-catalog/tea13.png" onclick="showProperties(this)"/>
           <label>Mint Fantasy</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container red sweet fruity none japan">
-          <img src="tea-catalog/tea14.png" />
+        <div class="catalog-card-container red sweet fruity none-caffeine japan">
+          <img src="tea-catalog/tea14.png" onclick="showProperties(this)"/>
           <label>Strawberry Rooibos</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container flowery astringent none indonesia">
-          <img src="tea-catalog/tea15.png" />
+        <div class="catalog-card-container flowery astringent none-caffeine indonesia">
+          <img src="tea-catalog/tea15.png" onclick="showProperties(this)"/>
           <label>Camomile</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
         <div
-          class="catalog-card-container grassy flowery red sweet none indonesia"
+          class="catalog-card-container grassy flowery red sweet none-caffeine indonesia"
         >
-          <img src="tea-catalog/tea16.png" />
+          <img src="tea-catalog/tea16.png" onclick="showProperties(this)"/>
           <label>Royal Dessert</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
-        <div class="catalog-card-container green astringent low indonesia">
-          <img src="tea-catalog/tea17.png" />
+        <div class="catalog-card-container green astringent low-caffeine indonesia">
+          <img src="tea-catalog/tea17.png" onclick="showProperties(this)"/>
           <label>Milk Oolong</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
         </div>
         <div
-          class="catalog-card-container grassy flowery red sweet fruity low indonesia"
+          class="catalog-card-container grassy flowery red sweet fruity low-caffeine indonesia"
         >
-          <img src="tea-catalog/tea18.png" />
+          <img src="tea-catalog/tea18.png" onclick="showProperties(this)"/>
           <label>Strawberry</label>
           <label>12 UAH/шт</label>
           <button onclick="addToCart(this)">купити</button>
@@ -432,5 +436,6 @@
     <script src="catalog.js" defer></script>
     <script src="weather.js" defer></script>
     <script src="shoppingcart.js" defer></script>
+    <script src="navbar.js" defer></script>
   </body>
 </html>
