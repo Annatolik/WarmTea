@@ -112,10 +112,6 @@ br{
     height: 60%;
 }
 
-.catalog-card-container img:hover{
-    opacity: 0.8;
-}
-
 .catalog-card-container:hover{
     border:2px solid #9D9595;
 }
