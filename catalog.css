@@ -97,6 +97,7 @@ br{
     border:2px solid #ffffff;
     padding:10px;
     transition: all 0.3s;
+    border:2px solid #ffffff;
 }
 
 .catalog-card-container label{
@@ -115,6 +116,7 @@ br{
 .catalog-card-container:hover{
     border:2px solid #9D9595;
 }
+
 
 #catalog-text{
     font-family: 'Tenor Sans';
@@ -144,5 +146,4 @@ br{
 
 .catalog-container button:hover{
     background-color:#615c5c;
-
 }
