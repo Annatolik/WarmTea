@@ -510,12 +510,11 @@ a{
 
 .log_in{
     width: 100%;
-    margin-top: 124px;
-    margin-bottom: 90px;
+    margin-top: auto;
+    margin-bottom: 3%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-
     font-family: 'Tenor Sans';
 }
 
@@ -526,13 +525,20 @@ a{
 .log_in_body{
     position: absolute;
     width: 90%;
-    height: 609px;
-    margin-top: 203px;
-    margin-left: 77px;
+    height: 65%;
+    margin-top: 14%;
+    margin-left: 5%;
     background: rgba(66, 69, 48, 0.94);
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
+}
+@media screen and (max-width: 768px) {
+    .log_in_body {
+      width: 100%;
+      margin-left: auto;
+      height: 70%;
+    }
 }
 
 .log_in h2 {
@@ -555,7 +561,6 @@ a{
     }
 }
 
-
 .log_in_text{
     position: absolute;
     display: flex;
@@ -565,23 +570,28 @@ a{
     font-size: 30px;
     line-height: 0px;
     flex-direction: column;
-    width: 500px;
+    text-align: center;
     padding: 20px 40px;
     color: rgba(255, 255, 255, 0.63);
 
 }
+@media screen and (max-width: 768px) {
+    .log_in_text {
+      font-size: 15px;
+      padding: 10px 20px;
+      margin-left: 3%;
+    }
+}
   
 .log_in_input{
     position: relative;
-    margin-top: 120px;
-    width: 500px;
-  
+    margin-top: 50%;
+    width: 220%;
 }
 
 .log_in_label{
     position: absolute;
     width: 100%;
-    height: 52px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -589,8 +599,7 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
-    margin-top: -20px;
-    margin-left: 50%;
+    margin-top: -2%;
     transition: all 0.2s ease-out;
 }
 
@@ -599,15 +608,20 @@ a{
     pointer-events: none;
     transition: all 0.2s ease-out;
     width: 100%;
-    margin-left: 50%;
+    text-align:left;
     transition: all 0.2s ease-out;
+}
+@media screen and (max-width: 768px) {
+    .log_in_text_bright {
+        width: 50%;
+    }
 }
    
 .log_in_line{
     position: absolute;
     width: 100%;
     height: 0px;
-    margin-top: 20px;
+    margin-top: 5%;
     margin-left: 50%;
     border: 2px solid;
 }
@@ -622,9 +636,8 @@ a{
     width: 230px;
     height: 55px;
     background: #667160;
-    align-self: center;
-    margin-top: 70px;
-    margin-left: 100%;
+    margin-top: 40%;
+    margin-left: 170%;
     border: 0;
     font-family: 'Tenor Sans';
     font-style: normal;
@@ -643,13 +656,15 @@ a{
 }
 
 .log_in_text p{
+   
     position: relative;
-    margin-top: 42px;
-    left: 50%;
+    margin-top: 13%;
     font-size: 23px;
     font-style: normal;
-    line-height: 16px;
+    line-height: 100%;
     display: flex;
+    left: 218%;
+    transform: translateX(-50%);
     justify-content: center;
     color: #FFFFFF;
 }
@@ -659,9 +674,9 @@ a{
 .sign_up_body{
     position: absolute;
     width: 90%;
-    height: 609px;
-    margin-top: 203px;
-    margin-left: 77px;
+    height: 70%;
+    margin-top: 13%;
+    margin-left: 5%;
     background: rgba(100, 64, 20, 0.87);
     display: flex;
     flex-wrap: wrap;
@@ -670,7 +685,7 @@ a{
 
 .sign_up_input{
     position: relative;
-    margin-top: 95px;
+    margin-top: 20%;
     width: 500px;
   
 }
@@ -680,7 +695,7 @@ a{
     height: 55px;
     background: #4B3112;
     align-self: center;
-    margin-top: 70px;
+    margin-top: 15%;
     margin-left: 100%;
     border: 0;
     font-family: 'Tenor Sans';
