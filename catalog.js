@@ -66,3 +66,9 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('click', filterElements);
 });
+
+function showProperties(button) {
+  let prop = Array.from(button.parentElement.classList);
+  prop.shift();
+  alert("Властивості чаю: " + prop);
+}
